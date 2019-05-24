@@ -1,4 +1,4 @@
-# JDownloaderDesign
+# JDownloaderDesign(GDEV04)
  JDownloader is built for downloading videos/audios from Youtube. JDownloader uses responsive design pattern so this JDownloaderDesign is a repository for making design preparation for next version.check out [JDownloader](https://github.com/janakhpon/JDownloaderDesign.git).
 
 
@@ -11,7 +11,7 @@ clone the repository
 
 Get into root folder
 
-    cd JDownloader
+    cd JDownloaderDesign
 
 Install Dependencies using [npm](https://www.npmjs.com/)
 
