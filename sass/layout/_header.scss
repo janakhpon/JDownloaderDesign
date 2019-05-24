@@ -1,0 +1,267 @@
+.header {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-around;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 1rem;
+  z-index: 80;
+}
+
+.nav__sort {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  align-self: center;
+  flex-basis: 8%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav__search {
+  margin: 0.1rem;
+  padding: 0.1rem;
+  align-self: center;
+  flex-basis: 35%;
+
+  &--form {
+    width: 100%;
+  }
+}
+
+.searchbar {
+  margin: 0 auto;
+  width: 100%;
+  height: 5rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+  border: 0.1rem solid #d0cfce;
+  border-radius: 2rem;
+  outline: none;
+
+  &:focus {
+    border: 0.2rem solid #008abf;
+    transition: 0.35s ease;
+    color: #008abf;
+
+    &::-webkit-input-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+
+    &::-moz-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+
+    &:-ms-placeholder {
+      transition: opacity 0.45s ease;
+      opacity: 0;
+    }
+  }
+
+
+}
+
+@media (max-width: 800px) {
+  .nav__search {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    align-self: center;
+    flex-basis: 50%;
+
+    &--form {
+      width: 100%;
+    }
+  }
+
+  .searchbar {
+    margin: 0 auto;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    border: 0.1rem solid #d0cfce;
+    border-radius: 1rem;
+    outline: none;
+
+    &:focus {
+      border: 0.2rem solid #008abf;
+      transition: 0.35s ease;
+      color: #008abf;
+
+      &::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &:-ms-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .nav__search {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    align-self: center;
+    flex-basis: 65%;
+
+    &--form {
+      width: 100%;
+    }
+  }
+
+  .searchbar {
+    margin: 0 auto;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    border: 0.1rem solid #d0cfce;
+    border-radius: 1rem;
+    outline: none;
+
+    &:focus {
+      border: 0.2rem solid #008abf;
+      transition: 0.35s ease;
+      color: #008abf;
+
+      &::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &:-ms-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+  &__btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  &:active .dropdown__content {
+    display: block;
+  }
+
+  &:hover .dropdown__content {
+    display: block;
+  }
+
+  &__content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  &__content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+}
+
+/* The droptype container */
+.droptype {
+  float: left;
+  overflow: hidden;
+
+  &__btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  &:active .droptype__content {
+    display: block;
+  }
+
+  &:hover .droptype__content {
+    display: block;
+  }
+
+  &__content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  &__btn:hover {
+    cursor: pointer;
+  }
+
+  &__btn:active {
+  }
+
+  &__content a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+}
+
+
