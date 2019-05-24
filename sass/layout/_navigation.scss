@@ -1,0 +1,130 @@
+.navigation {
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+
+  &__video {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 400;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle 919px at -3.2% 49.7%,
+      rgba(58, 158, 4, 0.96) 0.1%,
+      rgb(4, 150, 187) 99.4%
+    );
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    bottom: 10rem;
+    right: 6rem;
+
+    &--label i {
+      display: inline-block;
+      color: white;
+      margin: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-image: radial-gradient(
+        circle farthest-corner at -2% 1.4%,
+        rgba(255, 15, 15, 1) 0%,
+        rgba(228, 0, 228, 1) 100.7%
+      );
+    }
+
+    &:active {
+      background-image: radial-gradient(
+        circle 404px at -8% -12.9%,
+        rgba(171, 250, 36, 0.78) 19.7%,
+        rgba(248, 10, 194, 0.8) 59.3%,
+        rgba(0, 19, 250, 0.7) 95.6%
+      );
+    }
+
+    &:active &--label > i  {
+     color:$color-dark-pink;
+     font-size: 2.1rem;
+     transition: 0.5s;
+    }
+  }
+
+  &__audio {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 400;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle 919px at -3.2% 49.7%,
+      rgba(211, 8, 160, 0.96) 0.1%,
+      rgba(20, 189, 231, 1) 99.4%
+    );
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 10rem;
+    right: 6rem;
+
+    &--label i {
+      display: inline-block;
+      color: white;
+      margin: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      font-weight: bolder;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-image: radial-gradient(
+        circle farthest-corner at -2% 1.4%,
+        rgba(255, 15, 15, 1) 0%,
+        rgba(228, 0, 228, 1) 100.7%
+      );
+    }
+
+    &:active {
+      background-image: radial-gradient(
+        circle 404px at -8% -12.9%,
+        rgba(171, 250, 36, 0.78) 19.7%,
+        rgba(248, 10, 194, 0.8) 59.3%,
+        rgba(0, 19, 250, 0.7) 95.6%
+      );
+
+      color: $color-primary;
+    }
+
+    &:active &--label > i  {
+     color:$color-dark-pink;
+     font-size: 2.1rem;
+     transition: 0.5s;
+    }
+
+
+  }
+}
+
+.navigation__video:hover ~ video {
+  filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem rgb(9, 255, 0))
+    hue-rotate(40deg);
+}
+
+.navigation__audio:hover ~ video {
+  filter: grayscale(0%) contrast(150%) saturate(150%) brightness(103%);
+}
+
+
+
+
+
