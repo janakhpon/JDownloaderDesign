@@ -115,14 +115,6 @@
   }
 }
 
-.navigation__video:hover ~ video {
-  filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem rgb(9, 255, 0))
-    hue-rotate(40deg);
-}
-
-.navigation__audio:hover ~ video {
-  filter: grayscale(0%) contrast(150%) saturate(150%) brightness(103%);
-}
 
 
 

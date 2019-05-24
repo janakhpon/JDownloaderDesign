@@ -47,8 +47,8 @@ html {
 
 .sidebar_first > div {
   background: #000000;
-  margin: 3px 1px 3px 1px;
-  padding: 2px;
+  margin: 2px 0px 2px 0px;
+  padding: 1px;
   height: 45%;
   width: 98%;
   border-radius: 5px 5px 5px 5px;
@@ -120,7 +120,7 @@ html {
 }
 
 li {
-  padding: 20px;
+  padding: 17px;
   text-align: center;
   vertical-align: center;
   cursor: pointer;
@@ -137,30 +137,31 @@ a {
   height: 100%;
 }
 
-
-webview {
+webview{
   width: 100%;
   height: 100%;
+  filter: grayscale(100%);
 }
+
+webview:hover{
+  filter: grayscale(0%);
+}
+
+.navigation__video:hover ~ webview {
+  filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem rgba(9, 136, 4, 0.712))
+    hue-rotate(40deg);
+}
+
+.navigation__audio:hover ~ .page{
+  filter: grayscale(0%);
+}
+
+
 
 i {
   color: #4cdbba;
   font-size: 1.33em;
   text-align: center;
-}
-
-
-.main-nav_content > i:hover {
-  color: #ea5c86;
-
-  font-size: 2.5rem;
-
-  -webkit-transform: translate(0, 0.1rem);
-  -moz-transform: translate(0, 0.1rem);
-  -o-transform: translate(0, 0.1rem);
-  transform: translate(0, 0.1rem);
-
-  transition: 1.2s;
 }
 
 .second-nav_content > i:hover {
