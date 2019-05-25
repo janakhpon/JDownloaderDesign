@@ -1,4 +1,4 @@
-# JDownloaderDesign(Current:V05)
+# JDownloaderDesign
  JDownloader is built for downloading videos/audios from Youtube. JDownloader uses responsive design pattern so this JDownloaderDesign is a repository for making design preparation for next version.check out [JDownloaderDesign](https://github.com/janakhpon/JDownloaderDesign.git).
 
 
