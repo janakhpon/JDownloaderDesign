@@ -10,6 +10,9 @@ html {
 
 .main {
   display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -19,6 +22,21 @@ html {
 .main_panel {
   width: 74.9999vw;
   height: 99.9999vh;
+}
+
+
+.main-second{
+  display: flex;
+}
+
+.ms-left{
+  width: 49.9999%;
+  align-self: center;
+  text-align: center;
+}
+
+.ms-right{
+  @extend .ms-left;
 }
 
 .sidebar > div {
@@ -37,6 +55,9 @@ html {
   border-radius: 10px 10px 10px 10px;
 }
 
+
+
+
 .sidebar_canvas > div {
   margin: 2px;
   height: 20%;
@@ -54,51 +75,6 @@ html {
   border-radius: 5px 5px 5px 5px;
   border-bottom: 0.2px solid #3c40c6;
   border-top: 0.2px solid #3c40c6;
-}
-
-.sidebar_second > input {
-  background: #000000;
-  color: #4cdbba;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  margin: 3px 1px 3px 1px;
-  padding: 2px;
-  height: 45%;
-  width: 98%;
-  border-radius: 5px 5px 5px 5px;
-  border: 0px;
-}
-
-.sidebar_third > input {
-  background: #000000;
-  color: #4cdbba;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  margin: 3px 1px 3px 1px;
-  padding: 2px;
-  height: 45%;
-  width: 98%;
-  border-radius: 5px 5px 5px 5px;
-  border: 0px;
-}
-
-.sidebar_fourth > input {
-  background: #000000;
-  color: #4cdbba;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  margin: 3px 1px 3px 1px;
-  padding: 2px;
-  height: 45%;
-  width: 98%;
-  border-radius: 5px 5px 5px 5px;
-  border: 0px;
 }
 
 .main-nav {
@@ -140,11 +116,11 @@ a {
 webview{
   width: 100%;
   height: 100%;
-  filter: grayscale(100%);
+  filter: grayscale(100%) blur(0.5rem);
 }
 
 webview:hover{
-  filter: grayscale(0%);
+  filter: grayscale(0%) blur(0);
 }
 
 .navigation__video:hover ~ webview {
@@ -164,6 +140,29 @@ i {
   text-align: center;
 }
 
+.ms-left__status{
+  color: #4cdbba;
+  font-size: 0.85em;
+  text-align: center;
+  background: #000000;
+  border: 0px;
+  margin-bottom: 0.5rem;
+ 
+}
+
+.ms-left__count{
+  color:rgb(17, 185, 17);
+  font-size: 0.85em;
+  font-weight: bold;
+  background: #000000;
+  text-align: center;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  border: 0px;
+  margin-top: 0.5rem;
+  
+
+}
 .second-nav_content > i:hover {
   color: #ff0000;
 
